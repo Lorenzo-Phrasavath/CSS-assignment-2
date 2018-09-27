@@ -13,7 +13,7 @@ header {
   padding: 0.25em 1.5em;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 nav ul {
@@ -32,9 +32,10 @@ nav ul a {
 }
 article {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
   padding: 3em;
 }
 img {
@@ -70,25 +71,28 @@ footer {
   color: #000;
   margin: 0;
   padding: 0;
-  padding-bottom: 2em;
+  padding-right: 1.5em;
+  box-sizing: border-box;
 }
 .text {
-  background-color: #fff;
   color: #000;
-  margin: 0;
-  padding: 2em;
   font-size: 1em;
   line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  padding-left: 1.5em;
   box-sizing: border-box;
 }
 .text h2 {
-  text-align: center;
   margin: 0;
 }
 #cougar {
   background-color: #b26219;
 }
 #cougar .photo p{
+  color: #fff;
+}
+#cougar .text {
   color: #fff;
 }
 #lion {
@@ -106,9 +110,9 @@ a {
 a:hover {
   color: #82E8FF;
 }
-#cougar .photo a {
+#cougar a {
   color: #82E8FF;
 }
-#cougar .photo a:hover {
+#cougar a:hover {
   color: #cef5ff;
 }
